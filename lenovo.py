@@ -12,7 +12,7 @@ def crawl_deals(url):
     for i in soup.find_all('a','text-capitalize font-weight-bold product__card__learn-more v-btn v-btn--text theme--light v-size--default primary--text'):
          b=i.get('href')
         #  print(b)
-        #  product_page(b)
+         product_page(b)
     
 def product_page(url2):
      r = s.get(url2)
